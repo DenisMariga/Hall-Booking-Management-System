@@ -11,7 +11,7 @@ if(isset($_POST['insert']))
   $query->execute();
   $LastInsertId=$dbh->lastInsertId();
   if ($LastInsertId>0) {
-    echo '<script>alert("successfully registered.")</script>';
+    echo '<script>alert(" registered successfully.")</script>';
     echo "<script>window.location.href ='store.php'</script>";
   }
   else
